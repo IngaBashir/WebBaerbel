@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<body>
+		<a href="/group/{{groupname}}/add_member" >Add a new member to {{ groupname }} </a>
+		<a href="/group/{{groupname}}/delete_member" >Delete a member from {{ groupname }} </a>
+		<h1>Members</h1>
+		<ul>
+		{% for kotze in members %}
+    		<li>{{ kotze }}</li>
+		{% endfor %}
+		</ul>
+		<h1>Restaurants</h1>
+		<ul>
+		{% for kacke in restaurants %}
+    		<li>{{ kacke }}</li>
+		{% endfor %}
+		</ul>
+	</body>
+</html>
